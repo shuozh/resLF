@@ -20,7 +20,7 @@ IEEE Conference of Computer Vision and Pattern Recognition, 2019
   
         python resLF_test.py -I image_test_path/ -M model_path/ -S save_path/ -o 9 -c 3 -g 0 -s 2 -i blur -C y
 
-- For full Light Field SR ($7\times7$):
+- For full Light Field SR (7*7):
 
         python resLF_test.py -I image_test_path/ -M model_path/ -S save_path/ -o 9 -c 7 -g 0 -s 2 -i blur -C n
 
