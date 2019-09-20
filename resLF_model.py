@@ -32,10 +32,10 @@ class resLF(nn.Module):
 
         m_body = [
             common.ResBlock(
-                conv, n_feats*4, kernel_size, act=act, res_scale=1
+                conv, n_feats * 4, kernel_size, act=act, res_scale=1
             ) for _ in range(n_resblock)
         ]
-        m_body.append(conv(n_feats*4, n_feats, kernel_size))
+        m_body.append(conv(n_feats * 4, n_feats, kernel_size))
 
         # define tail module
         m_tail = [
@@ -55,8 +55,8 @@ class resLF(nn.Module):
     def forward(self, train_data_0, train_data_90, train_data_45, train_data_135):
 
         # extract the central view from the image stack
-        mid_view = np.int8((self.n_view-1)/2)
-        central_x = train_data_0[:, mid_view:mid_view+1, :, :]
+        mid_view = np.int8((self.n_view - 1) / 2)
+        central_x = train_data_0[:, mid_view:mid_view + 1, :, :]
 
         res_x = self.central_head(central_x)
 
@@ -97,4 +97,3 @@ class resLF(nn.Module):
                 if name.find('tail') == -1:
                     raise KeyError('unexpected key "{}" in state_dict'
                                    .format(name))
-
