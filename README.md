@@ -34,11 +34,12 @@ IEEE Conference of Computer Vision and Pattern Recognition, 2019
 We provide different downsampling methods named 'Bicubic' and 'Blur'. 
 In 'Blur', the sub-aperture images are first blurred using the normalized box filter (the filter size is $scale \times scale$), then regularly decimated to the desired resolution. 
 In 'Bicubic', the sub-aperture images are directly downsampled using bicubic downsampling method.
+
 Note that 'Blur' downsampling method achieves better results compared with 'Bicubic' downsampling method.
 
 ### Dataset:
 The training and testing example dataset can be found at: http://lightfields.stanford.edu/ (Lytro Illum), 
-https://mmspg.epfl.ch/downloads/epfl-light-field-image-dataset/ (Lytro Illum) and  https://lightfield-analysis.uni-konstanz.de (Synthesis Light Field).
+https://mmspg.epfl.ch/downloads/epfl-light-field-image-dataset/ (Lytro Illum) and  https://lightfield-analysis.uni-konstanz.de (Synthesis Light Field). See Training/Testing Dataset.txt.
 
 
 ### Envs:
@@ -54,7 +55,10 @@ cudnn 7.5.1
 
 ### Time log:
 
-2019.09.19 Another downsampling method is provided. 
+2019.10.28 4X models are provided. 
+
+2019.09.19 Different downsampling methods are provided. 
+
 2019.06.12 The package released.
 
 
