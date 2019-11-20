@@ -28,6 +28,9 @@ IEEE Conference of Computer Vision and Pattern Recognition, 2019
         
         python resLF_test.py -h
     
+**Train example:** 
+
+
 
 ### Note:
 
@@ -41,6 +44,7 @@ Note that 'Blur' downsampling method achieves better results compared with 'Bicu
 The training and testing example dataset can be found at: http://lightfields.stanford.edu/ (Lytro Illum), 
 https://mmspg.epfl.ch/downloads/epfl-light-field-image-dataset/ (Lytro Illum) and  https://lightfield-analysis.uni-konstanz.de (Synthesis Light Field). See Training/Testing Dataset.txt.
 
+In order to test the `Miscellaneous Category` dataset in http://lightfields.stanford.edu/, we retrain the model with a new training dataset. (Our training dataset in CVPR paper includeds the `Miscellaneous Category`.) The new list and the trained model is provided, in which we als obtain better performances compared with the results in the CVPR paper.
 
 ### Envs:
 
